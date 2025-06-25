@@ -39,6 +39,30 @@
       max-height: 600px;
       overflow: hidden;
     }
+
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-text {
+      text-align: justify;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      /* o prueba con 0.9rem o 0.85rem */
+      font-weight: bold;
+      white-space: nowrap;
+    }
   </style>
 </head>
 
@@ -103,9 +127,50 @@
     </ul>
     <div class="tab-content p-4 border rounded bg-dark" style="border-color: #00b4d8;">
       <div class="tab-pane fade show active" id="portafolio" role="tabpanel">
-        <h2 class="text-info">Portafolio</h2>
-        <p>Pronto verás nuestros proyectos más destacados.</p>
+        <h2 class="text-info">Proyectos que transforman negocios</h2>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-secondary border border-info shadow-sm">
+              <a href="https://app-pe.github.io/tv40/shop.html?id=shop4" target="_blank">
+                <img src="img/portafolio1.jpeg" class="card-img-top img-fluid" alt="Proyecto 1"
+                  style="object-fit: cover; height: 100%;">
+              </a>
+              <div class="card-body text-light">
+                <h5 class="card-title text-info">Proyecto TV40 Shop</h5>
+                <p class="card-text">Desarrollamos una plataforma virtual con propósito de servicio al emprendedor, mostramos tu
+                  catálogo de productos por un periodo gratuito de 40 días.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-secondary border border-info shadow-sm">
+              <a href="https://app-pe.github.io/escueladecosmetologiacarolina" target="_blank">
+                <img src="img/portafolio2.jpeg" class="card-img-top img-fluid" alt="Proyecto 1"
+                  style="object-fit: cover; height: 100%;">
+              </a>
+              <div class="card-body text-light">
+                <h5 class="card-title text-info">Proyecto Escuela de Cosmetología</h5>
+                <p class="card-text">Diseñamos una página web donde se muestra la información de cursos y un video demo donde se puede observar como es un día de clase.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-secondary border border-info shadow-sm">
+              <a href="" target="_blank">
+                <img src="img/portafolio3.jpeg" class="card-img-top img-fluid" alt="Proyecto 1"
+                  style="object-fit: cover; height: 100%;">
+              </a>
+              <div class="card-body text-light">
+                <h5 class="card-title text-info">Proyecto Carrywash</h5>
+                <p class="card-text">Estamos desarrollando una plataforma virtual donde se gestiona la información de reparaciones y
+                  mantenimiento de vehículos en un taller automotriz.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
       <div class="tab-pane fade" id="servicios" role="tabpanel">
         <h2 class="text-info">Servicios</h2>
         <p>Ofrecemos consultoría tecnológica a medida.</p>
